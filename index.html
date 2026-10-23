@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdmSpot - Gestão de Ordem de Serviço</title>
+  <meta name="description" content="Da abertura da OS ao recebimento: ordens de serviço, financeiro, contabilidade e cobrança automática num painel só.">
+  <meta name="theme-color" content="#0ea5a5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Faixa de aviso (como o banner da Tiny) -->
+  <div class="topbar">
+    Para oficinas mecânicas, manutenção e assistência técnica:
+    <a href="https://admspot.app/lp/ordem-servico/comecar">crie sua conta e abra a primeira OS hoje →</a>
+  </div>
+
+  <!-- Cabeçalho com menus que abrem ao clicar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="AdmSpot">Adm<span>Spot</span></a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Menu principal">
+
+        <!-- Funcionalidades -->
+        <div class="nav-item">
+          <button class="nav-btn" type="button" aria-expanded="false">Funcionalidades</button>
+          <div class="mega">
+            <div class="container mega-grid">
+              <div class="mega-intro">
+                <h3>Tudo num painel só</h3>
+                <p>Os módulos trabalham juntos, da ordem de serviço à contabilidade.</p>
+                <a class="mega-link-all" href="#solucao">Ver funcionalidades</a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="#solucao"><span class="icon">🛠️</span><b>Ordem de Serviço</b><span>Cliente, veículo, peças e mão de obra, com status e histórico.</span></a>
+                <a class="mega-item" href="#solucao"><span class="icon">💰</span><b>Controle financeiro</b><span>Fluxo de caixa, contas a pagar e a receber em tempo real.</span></a>
+                <a class="mega-item" href="#solucao"><span class="icon">📊</span><b>Área contábil</b><span>DRE, balancete e plano de contas prontos para o contador.</span></a>
+                <a class="mega-item" href="#solucao"><span class="icon">📈</span><b>Análise &amp; projeção</b><span>Despesas e ganhos por categoria e projeção dos próximos meses.</span></a>
+                <a class="mega-item" href="#conta-digital"><span class="icon">🏦</span><b>Conta Digital</b><span>O pagamento é conciliado e baixa a OS sozinho.</span></a>
+                <a class="mega-item" href="#solucao"><span class="icon">👤</span><b>Portal do Cliente</b><span>2ª via, faturas e notificações sem atender ligação.</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Para quem -->
+        <div class="nav-item">
+          <button class="nav-btn" type="button" aria-expanded="false">Para quem</button>
+          <div class="mega">
+            <div class="container mega-grid">
+              <div class="mega-intro">
+                <h3>Feito para quem presta serviço</h3>
+                <p>Se você abre ordens de serviço e cobra por elas, o AdmSpot organiza o dia a dia.</p>
+                <a class="mega-link-all" href="#planos">Ver o plano</a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="#problema"><span class="icon">🔧</span><b>Oficina mecânica</b><span>Cadastre cliente, veículo, peças e mão de obra em cada OS.</span></a>
+                <a class="mega-item" href="#problema"><span class="icon">⚙️</span><b>Manutenção</b><span>Controle equipamentos, garantias e o histórico de cada serviço.</span></a>
+                <a class="mega-item" href="#problema"><span class="icon">🖥️</span><b>Assistência técnica</b><span>Orçamento, aprovação e cobrança sem caderno nem planilha.</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Como funciona -->
+        <div class="nav-item">
+          <button class="nav-btn" type="button" aria-expanded="false">Como funciona</button>
+          <div class="mega">
+            <div class="container mega-grid">
+              <div class="mega-intro">
+                <h3>Do orçamento ao caixa em 3 passos</h3>
+                <p>Sem instalar nada: crie a conta e abra a primeira OS.</p>
+                <a class="mega-link-all" href="#como-funciona">Ver passo a passo</a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="#como-funciona"><span class="icon">1</span><b>Abra a OS</b><span>Cadastre cliente, veículo, peças e mão de obra e envie o orçamento.</span></a>
+                <a class="mega-item" href="#como-funciona"><span class="icon">2</span><b>Execute e cobre</b><span>Gere a cobrança por PIX, boleto ou cartão. O pagamento baixa a OS.</span></a>
+                <a class="mega-item" href="#como-funciona"><span class="icon">3</span><b>Acompanhe</b><span>Fluxo de caixa, DRE e conciliação atualizados para decidir com dados.</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plano (link direto) -->
+        <div class="nav-item">
+          <a class="nav-btn" href="#planos">Plano</a>
+        </div>
+
+        <!-- Dúvidas: respostas rápidas -->
+        <div class="nav-item">
+          <button class="nav-btn" type="button" aria-expanded="false">Dúvidas</button>
+          <div class="mega">
+            <div class="container mega-grid">
+              <div class="mega-intro">
+                <h3>Respostas rápidas</h3>
+                <p>As perguntas que mais aparecem antes de começar.</p>
+                <a class="mega-link-all" href="#faq">Ver todas as dúvidas</a>
+              </div>
+              <div class="mega-list cols-2">
+                <div class="mega-item qa"><b>Serve para qual serviço?</b><span>Oficina mecânica, manutenção e assistência técnica.</span></div>
+                <div class="mega-item qa"><b>Preciso instalar algo?</b><span>Não. Funciona no navegador, no computador ou no celular.</span></div>
+                <div class="mega-item qa"><b>Como cobro o cliente?</b><span>Por PIX, boleto ou cartão. O pagamento baixa a OS.</span></div>
+                <div class="mega-item qa"><b>Tem relatório para o contador?</b><span>Sim: DRE, balancete e plano de contas.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sobre nós (link direto) -->
+        <div class="nav-item">
+          <a class="nav-btn" href="#sobre">Sobre nós</a>
+        </div>
+      </nav>
+
+      <a href="https://admspot.app/lp/ordem-servico/comecar" class="btn btn-primary header-cta">Teste grátis</a>
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav"><i></i><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INÍCIO -->
+    <section class="hero grid-bg" id="inicio">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="tag">Gestão de Ordem de Serviço</span>
+          <h1>O sistema completo para quem vive de <span class="hl">prestar serviço.</span></h1>
+          <p class="lead">Ordem de serviço, financeiro, contabilidade e cobrança automática num painel só. Para oficina mecânica, manutenção e assistência técnica.</p>
+          <div class="actions">
+            <a href="https://admspot.app/lp/ordem-servico/comecar" class="btn btn-primary">Começar agora →</a>
+            <a href="#planos" class="btn btn-ghost">Ver plano</a>
+          </div>
+          <ul class="hero-points">
+            <li>OS aberta em segundos</li>
+            <li>100% na nuvem</li>
+            <li>Cobrança por PIX</li>
+          </ul>
+        </div>
+
+        <div class="mock reveal">
+          <div class="shot">
+            <img src="img/relatorio-de-vendas.gif" alt="Painel de ordens de serviço do AdmSpot">
+          </div>
+          <div class="float f1">Ordens hoje<b>12 abertas</b></div>
+          <div class="float f3">A receber<b>R$ 8.420</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA ROLANDO (infinite marquee) -->
+    <div class="strip" aria-label="Recursos do sistema">
+      <div class="strip-track" id="stripTrack">
+        <div class="strip-group">
+          <span>Ordem de Serviço</span><span>Controle financeiro</span><span>Conta Digital</span><span>Cobrança por PIX</span>
+          <span>Boleto</span><span>Cartão de crédito</span><span>NF-e e NFS-e</span><span>Portal do Cliente</span>
+          <span>DRE e balancete</span><span>Controle de estoque</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- O PROBLEMA (seção escura) -->
+    <section class="dark grid-bg" id="problema">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="tag warn">O problema</span>
+          <h2>Papel e WhatsApp travam <span class="hl">o seu negócio</span></h2>
+          <p class="lead">Quando OS, cobrança e financeiro ficam em lugares diferentes, você perde tempo e dinheiro.</p>
+        </div>
+
+        <div class="grid g4">
+          <article class="card warn-card reveal">
+            <div class="icon">📋</div>
+            <h3>OS espalhadas</h3>
+            <p>Caderno, planilha e WhatsApp. Ninguém acha o histórico do cliente na hora.</p>
+          </article>
+          <article class="card warn-card reveal">
+            <div class="icon">💸</div>
+            <h3>Cobrança manual</h3>
+            <p>Serviço entregue, cobrança esquecida e dinheiro que demora a entrar.</p>
+          </article>
+          <article class="card warn-card reveal">
+            <div class="icon">📉</div>
+            <h3>Lucro no escuro</h3>
+            <p>Sem fluxo de caixa e DRE, você não sabe quanto cada serviço rende.</p>
+          </article>
+          <article class="card warn-card reveal">
+            <div class="icon">📞</div>
+            <h3>Cliente ligando</h3>
+            <p>2ª via, nota e status viram ligação, e alguém para tudo para atender.</p>
+          </article>
+        </div>
+
+        <p class="more-wrap center"><a class="more-link" href="#planos">Saiba mais.</a></p>
+      </div>
+    </section>
+
+    <!-- A SOLUÇÃO -->
+    <section class="alt feat" id="solucao">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="tag">A solução</span>
+          <h2>Serviço, dinheiro e cliente <span class="hl">em um só lugar</span></h2>
+          <p class="lead">Os módulos do AdmSpot trabalham juntos, da ordem de serviço à contabilidade.</p>
+        </div>
+
+        <div class="grid g3">
+          <article class="card reveal"><div class="icon">🛠️</div><h3>Ordem de Serviço</h3><p>Cliente, veículo, peças e mão de obra, com status e histórico.</p></article>
+          <article class="card reveal"><div class="icon">💰</div><h3>Controle financeiro</h3><p>Fluxo de caixa, contas a pagar e a receber em tempo real.</p></article>
+          <article class="card reveal"><div class="icon">📊</div><h3>Área contábil</h3><p>DRE, balancete e plano de contas prontos para o contador.</p></article>
+          <article class="card reveal"><div class="icon">📈</div><h3>Análise &amp; projeção</h3><p>Despesas e ganhos por categoria, com projeção dos próximos meses.</p></article>
+          <article class="card reveal"><div class="icon">🏦</div><h3>Conta Digital</h3><p>Conciliação automática: o pagamento baixa a OS sozinho.</p></article>
+          <article class="card reveal"><div class="icon">👤</div><h3>Portal do Cliente</h3><p>2ª via, faturas e notificações sem você atender ligação.</p></article>
+        </div>
+
+        <p class="more-wrap center"><a class="more-link" href="#planos">Saiba mais.</a></p>
+      </div>
+    </section>
+
+    <!-- CONTA DIGITAL -->
+    <section id="conta-digital">
+      <div class="container split">
+        <div class="reveal">
+          <span class="tag">Conta Digital</span>
+          <h2>Cobre e receba <span class="hl">sem esforço manual</span></h2>
+          <ul class="checks">
+            <li>Cobrança automática por PIX, boleto ou cartão</li>
+            <li>Conciliação bancária: cada pagamento baixa a OS e a parcela</li>
+            <li>Recebimentos unificados, sem pular entre bancos e maquininhas</li>
+          </ul>
+          <div class="pills"><span>PIX</span><span>Boleto</span><span>Cartão de crédito</span></div>
+          <div class="actions">
+            <a href="https://admspot.app/lp/ordem-servico/comecar" class="btn btn-primary">Criar minha conta →</a>
+          </div>
+          <p class="more-wrap"><a class="more-link" href="#planos">Saiba mais.</a></p>
+        </div>
+
+        <div class="mock reveal">
+          <div class="shot">
+            <img src="img/pagamento-cobranca.gif" alt="Cobrança e pagamentos no AdmSpot" loading="lazy">
+          </div>
+          <div class="float f3">Pagamentos<b>Conciliados</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="alt" id="como-funciona">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="tag">Como funciona</span>
+          <h2>Do orçamento ao caixa <span class="hl">em 3 passos</span></h2>
+        </div>
+
+        <div class="grid g3 steps">
+          <article class="card step reveal"><div class="num">01</div><h3>Abra a OS</h3><p>Cadastre cliente, veículo, peças e mão de obra. Envie o orçamento para aprovação.</p></article>
+          <article class="card step reveal"><div class="num">02</div><h3>Execute e cobre</h3><p>Gere a cobrança por PIX, boleto ou cartão. O pagamento baixa a OS.</p></article>
+          <article class="card step reveal"><div class="num">03</div><h3>Acompanhe</h3><p>Fluxo de caixa, DRE e conciliação atualizados. Decida com dados.</p></article>
+        </div>
+
+        <p class="more-wrap center"><a class="more-link" href="#planos">Saiba mais.</a></p>
+      </div>
+    </section>
+
+    <!-- PLANO -->
+    <section id="planos">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="tag">Plano</span>
+          <h2>Um plano que <span class="hl">cabe na sua oficina</span></h2>
+          <p class="lead">Tudo o que você precisa para organizar serviços e financeiro.</p>
+        </div>
+
+        <article class="card plan reveal">
+          <span class="badge">★ Mais popular</span>
+          <div class="plan-main">
+            <h3>Essencial OS</h3>
+            <p>Mais organização nos serviços e mais tempo para atender bem.</p>
+            <div class="price">R$ 10,00<small>/mês</small></div>
+            <a href="https://admspot.app/lp/ordem-servico/comecar?plano=8" class="btn btn-primary">⚡ Começar agora</a>
+          </div>
+
+          <div class="highlights">
+            <h4>35 recursos incluídos · Principais recursos</h4>
+            <ul class="hl-list">
+              <li>Ordens de serviço e veículos</li>
+              <li>Contas a pagar e a receber</li>
+              <li>Conta digital e cobranças</li>
+              <li>Emissão de NF-e e NFS-e</li>
+              <li>Contabilidade e custos</li>
+              <li>Clientes, fornecedores e estoque</li>
+            </ul>
+            <button class="btn btn-ghost" type="button" data-open="modal-plano">Ver todos os benefícios do plano</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section class="alt" id="sobre">
+      <div class="container split">
+        <div class="reveal">
+          <span class="tag">Sobre nós</span>
+          <h2>A tecnologia criada a partir dos <span class="hl">bastidores do varejo brasileiro</span></h2>
+          <p class="lead">A AdmSpot nasceu de conversas com empresários que não aguentavam mais sistemas engessados e complicados. Por isso criamos uma plataforma ágil, moderna e pensada para o empreendedor brasileiro, com tecnologia inteligente, suporte humanizado e inteligência artificial.</p>
+          <div class="actions">
+            <a href="https://www.admspot.com.br/blog/artigo/solucao-criada-para-apoiar-empresas-todo-porte" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Assistir ao Podcast Completo →</a>
+          </div>
+        </div>
+
+        <figure class="about-quote reveal">
+          <span class="about-mark" aria-hidden="true">“</span>
+          <blockquote>Quem vive o comércio não precisa só de software, precisa de um <span class="hl">parceiro</span>.</blockquote>
+          <figcaption>Tecnologia ágil, suporte humanizado e IA a serviço de quem empreende.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="tag">FAQ</span>
+          <h2>Perguntas <span class="hl">frequentes</span></h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>Serve para qual tipo de serviço?</summary>
+            <p>Oficina mecânica, manutenção e assistência técnica. Você cadastra cliente, veículo ou equipamento, peças e mão de obra, e controla tudo pela OS.</p>
+          </details>
+          <details>
+            <summary>Preciso instalar algum programa?</summary>
+            <p>Não. Funciona no navegador, no computador ou no celular. É só criar a conta e começar.</p>
+          </details>
+          <details>
+            <summary>Como funciona a cobrança dos clientes?</summary>
+            <p>Você gera a cobrança da OS por PIX, boleto ou cartão. Com a conta digital, o pagamento é conciliado e baixa a ordem automaticamente.</p>
+          </details>
+          <details>
+            <summary>Tem relatórios para o meu contador?</summary>
+            <p>Sim. DRE, balancete e plano de contas, além de análise de despesas e projeção de receita e gastos.</p>
+          </details>
+          <details>
+            <summary>O cliente acompanha o serviço?</summary>
+            <p>Sim. Pelo Portal do Cliente ele acessa 2ª via, faturas e notificações, sem ligar para você.</p>
+          </details>
+          <details>
+            <summary>Meus dados estão seguros?</summary>
+            <p>Sim. Os dados são armazenados com criptografia e usados só para a gestão do seu negócio. Você pode pedir a exclusão quando quiser.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section>
+      <div class="container">
+        <div class="cta reveal">
+          <span class="tag">Comece agora</span>
+          <h2>Organize seus serviços e <span class="hl">receba mais rápido</span></h2>
+          <p class="lead">Crie sua conta, abra a primeira OS e cobre por PIX ainda hoje.</p>
+          <p><a href="https://admspot.app/lp/ordem-servico/comecar" class="btn btn-primary">Criar minha conta grátis →</a></p>
+          <div class="pills"><span>Sem instalar nada</span><span>Começa em minutos</span><span>Cancele quando quiser</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>AdmSpot</strong> — gestão de ordem de serviço, financeiro e contabilidade.<br>
+      © 2026 AdmSpot. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- JANELA: todos os benefícios do plano -->
+  <dialog class="modal" id="modal-plano" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <div>
+        <span class="badge-inline">★ Mais popular</span>
+        <h3 id="modal-title">Essencial OS</h3>
+        <p>Mais organização nos serviços e mais tempo para atender bem.</p>
+      </div>
+      <div class="modal-price">
+        <div class="price">R$ 10,00<small>/mês</small></div>
+        <span>35 recursos incluídos</span>
+      </div>
+      <button class="modal-close" type="button" aria-label="Fechar" data-close>✕</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="groups">
+        <div class="group"><h4>Gestão</h4><ul>
+          <li>Painel</li><li>Dashboard de Serviços</li><li>Análise de despesas</li><li>Clientes</li>
+          <li>Fornecedores</li><li>Colaboradores</li><li>Perfil da empresa</li><li>Gestão de acessos</li>
+        </ul></div>
+        <div class="group"><h4>Serviços</h4><ul>
+          <li>Ordens de serviço</li><li>Operações de Serviços</li><li>Veículos</li>
+          <li>Motoristas</li><li>Transportadoras</li><li>Garantias</li>
+        </ul></div>
+        <div class="group"><h4>Estoque e vendas</h4><ul>
+          <li>Produtos</li><li>Categorias de produtos</li><li>Marcas</li><li>Armazéns</li><li>Inventário</li>
+          <li>Movimentações de estoque</li><li>Pedidos de venda</li><li>Pedidos de compra</li><li>Operações de venda</li>
+        </ul></div>
+        <div class="group"><h4>Financeiro</h4><ul>
+          <li>Conta digital</li><li>Contas a pagar</li><li>Contas a receber</li><li>Cobranças</li>
+          <li>Faturas</li><li>Pagamentos</li><li>Condições de pagamento</li><li>Cartões</li>
+        </ul></div>
+        <div class="group"><h4>Fiscal e contábil</h4><ul>
+          <li>Contabilidade</li><li>Custos</li><li>Emissão de NF-e</li><li>Emissão de NFS-e</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="modal-foot">
+      <a href="https://admspot.app/lp/ordem-servico/comecar?plano=8" class="btn btn-primary">⚡ Começar agora</a>
+    </div>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
